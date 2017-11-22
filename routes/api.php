@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'v1'], function() {
+    Route::post('/reports', ['uses' => '\App\Http\Controllers\ReportsController@create']);
+    Route::get('/reports/{uid}', ['uses' => '\App\Http\Controllers\ReportsController@show']);
+    Route::put('/reports/{uid}', ['uses' => '\App\Http\Controllers\ReportsController@update']);
 });

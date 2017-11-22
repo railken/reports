@@ -1,3 +1,4 @@
+import router from './router';
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -15,8 +16,14 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+// Vue.component('main', require('./components/Main.vue'));
+Vue.component('select-materialize', require('./components/SelectMaterialize'));
+
+Vue.use(router);
+
+router.mode = 'html5';
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    router: router
 });
