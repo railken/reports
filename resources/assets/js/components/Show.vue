@@ -63,5 +63,6 @@
 
     .description img {
         max-width: 100%;
+        display: block;
     }
 </style>
