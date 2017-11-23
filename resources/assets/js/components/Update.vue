@@ -29,13 +29,16 @@
             return {
                 types: [
                     { 
-                        label: 'Navigation',
-                        value: 'Navigation'
+                        label: 'Low (e.g. wording, navigation, graphic)',
+                        value: 'Low'
                     },
-
                     { 
-                        label: 'Critical',
-                        value: 'Critical'
+                        label: 'Medium (e.g. form validation, unexpected results)',
+                        value: 'Medium'
+                    },
+                    { 
+                        label: 'High (e.g. entire section blocked, security issue)',
+                        value: 'High'
                     }
                 ],
                 report: null,
