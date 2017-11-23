@@ -19,7 +19,7 @@
             </p>
             <p>
                 <b>Description</b> <br>
-                <div v-html='bug.description'></div>
+                <div v-html='bug.description' class='description'></div>
             </p>
             <hr>
         </div>
@@ -59,5 +59,9 @@
 
     .fill {
         flex-grow: 1;
+    }
+
+    .description img {
+        max-width: 100%;
     }
 </style>

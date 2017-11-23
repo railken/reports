@@ -26592,7 +26592,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "\n.content {\n    padding: 20px;\n}\n.fluid {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.fill {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n", ""]);
+exports.push([module.i, "\n.content {\n    padding: 20px;\n}\n.fluid {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.fill {\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1;\n}\n.description img {\n    max-width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -26695,7 +26695,10 @@ var render = function() {
               ]),
               _vm._v(" "),
               _vm._m(0, true, false),
-              _c("div", { domProps: { innerHTML: _vm._s(bug.description) } }),
+              _c("div", {
+                staticClass: "description",
+                domProps: { innerHTML: _vm._s(bug.description) }
+              }),
               _vm._v(" "),
               _c("p"),
               _vm._v(" "),
@@ -26855,7 +26858,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 label: 'Low (e.g. wording, navigation, graphic)',
                 value: 'Low'
             }, {
-                label: 'Medium (e.g. form validation, Unexpected results)',
+                label: 'Medium (e.g. form validation, unexpected results)',
                 value: 'Medium'
             }, {
                 label: 'High (e.g. entire section blocked, security issue)',
